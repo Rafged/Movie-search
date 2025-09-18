@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "prepare": "husky && husky install",
-    "test": "echo \"No tests\"",
-    "lint": "eslint ."
+    "test": "echo \"No tests\""
+    "lint": "e"
   },
   "dependencies": {
     "next": "15.0.0",
