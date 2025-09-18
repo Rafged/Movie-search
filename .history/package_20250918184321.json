@@ -6,8 +6,8 @@
     "dev": "next dev -p 3000",
     "build": "next build",
     "start": "next start",
-    "prepare": "husky && husky install",
-    "test": "echo \"No tests\""
+    "prepare": "husky && husky install"
+    "test": "echo "
   },
   "dependencies": {
     "next": "15.0.0",
