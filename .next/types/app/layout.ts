@@ -1,4 +1,4 @@
-// File: C:\Users\M1stendo\OneDrive\문서\Movies-search\app\layout.tsx
+// File: C:\Users\M1stendo\OneDrive\문서\Moviess-search\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
