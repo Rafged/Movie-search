@@ -1,25 +1,19 @@
 {
-  "name": "movie-search-tmdb",
+  "name": "movie-search-ssr-nextjs",
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 3000",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "prepare": "husky && husky install",
-    "test": "echo \"No tests\"",
-    "lint": "eslint ."
+    "start": "next start"
   },
   "dependencies": {
-    "antd": "^5.27.4",
-    "next": "15.0.0",
+    "next": "14.0.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "24.3.3",
-    "@types/react": "19.1.13",
-    "husky": "^8.0.0",
-    "typescript": "5.3.2"
+    "react-dom": "18.2.0",
+    "antd": "^5.0.0",
+    "lodash.debounce": "^4.0.8",
+    "date-fns": "^2.30.0",
+    "isomorphic-unfetch": "^3.1.0"
   }
 }
