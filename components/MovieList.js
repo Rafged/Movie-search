@@ -19,7 +19,7 @@ export default function MovieList({ movies }) {
               <div style={{ marginTop:6, marginBottom:6 }}>{truncate(m.overview || '', 120)}</div>
               <div style={{ display:'flex', justifyContent:'space-between', alignItems:'center' }}>
                 <div>
-                  <Rate allowHalf disabled value={m.vote_average / 2} />
+                  <Rate allowHalf onChange={handleRateChange} value={rating} />
                 </div>
                 <div>
                   <Badge style={{ backgroundColor: getVoteColor(m.vote_average), color: '#fff' }} count={Math.round(m.vote_average * 10) / 10} />

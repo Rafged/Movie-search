@@ -15,6 +15,7 @@ import {
 const { Meta } = Card;
 
 export default function Page() {
+  const [rating, setRating] = useState(0);
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -121,9 +122,10 @@ export default function Page() {
                 : 'No description'}
             </p>
             <Rate
-              value={ratedMovies[movie.id]?.myRating || 0}
-              onChange={(value) => handleRate(movie, value)}
-            />
+  allowHalf
+  value={rating}
+  onChange={(value) => setRating(value)}
+/>
           </>
         }
       />
