@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/api/genres": "pages/api/genres.js",
-  "/api/rated": "pages/api/rated.js",
-  "/api/search": "pages/api/search.js"
+  "/api/search": "pages/api/search.js",
+  "/api/rated": "pages/api/rated.js"
 }
