@@ -5,7 +5,7 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end();
   try {
     const { movie_id, value, guest_session_id } = req.body;
-    if (!movie_id || !value || !guest_session_id) return res.status(400).json({ error: 'missing' });
+    if (!movie_id || (typeof value !== 'number') || !guest_session_id) return res.status(400).json({ error: 'missing' });
     const r = await fetch(`https://api.themoviedb.org/3/movie/${movie_id}/rating?api_key=${key}&guest_session_id=${guest_session_id}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json;charset=utf-8' },
