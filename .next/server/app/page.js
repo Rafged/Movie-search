@@ -100,6 +100,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cglobals.css&modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Cnode_modules%5Cantd%5Cdist%5Creset.css&server=true!":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cglobals.css&modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Cnode_modules%5Cantd%5Cdist%5Creset.css&server=true! ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
 /***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cloading.js&server=true!":
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cloading.js&server=true! ***!
@@ -117,16 +127,6 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__web
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./app/page.js */ \"(ssr)/./app/page.js\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9QyUzQSU1Q1VzZXJzJTVDTTFzdGVuZG8lNUNPbmVEcml2ZSU1QyVFQiVBQyVCOCVFQyU4NCU5QyU1Q01vdmllc3Mtc2VhcmNoJTVDYXBwJTVDcGFnZS5qcyZzZXJ2ZXI9dHJ1ZSEiLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9tb3ZpZS1zZWFyY2gtc3NyLW5leHRqcy8/YWI4YyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIkM6XFxcXFVzZXJzXFxcXE0xc3RlbmRvXFxcXE9uZURyaXZlXFxcXOusuOyEnFxcXFxNb3ZpZXNzLXNlYXJjaFxcXFxhcHBcXFxccGFnZS5qc1wiKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cpage.js&server=true!\n");
-
-/***/ }),
-
-/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Cnode_modules%5Cantd%5Cdist%5Creset.css&modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cglobals.css&server=true!":
-/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Cnode_modules%5Cantd%5Cdist%5Creset.css&modules=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp%5Cglobals.css&server=true! ***!
-  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ (() => {
-
-
 
 /***/ }),
 
@@ -169,7 +169,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"56b97a5c63cf\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvZ2xvYmFscy5jc3MiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLGNBQWM7QUFDN0IsSUFBSSxLQUFVLEVBQUUsRUFBdUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9tb3ZpZS1zZWFyY2gtc3NyLW5leHRqcy8uL2FwcC9nbG9iYWxzLmNzcz9lOTdmIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiNTZiOTdhNWM2M2NmXCJcbmlmIChtb2R1bGUuaG90KSB7IG1vZHVsZS5ob3QuYWNjZXB0KCkgfVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./app/globals.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"aea3f4834eac\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvZ2xvYmFscy5jc3MiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLGlFQUFlLGNBQWM7QUFDN0IsSUFBSSxLQUFVLEVBQUUsRUFBdUIiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9tb3ZpZS1zZWFyY2gtc3NyLW5leHRqcy8uL2FwcC9nbG9iYWxzLmNzcz9lOTdmIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiYWVhM2Y0ODM0ZWFjXCJcbmlmIChtb2R1bGUuaG90KSB7IG1vZHVsZS5ob3QuYWNjZXB0KCkgfVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./app/globals.css\n");
 
 /***/ }),
 
@@ -249,7 +249,7 @@ const __default__ = proxy.default;
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/antd","vendor-chunks/@ant-design","vendor-chunks/@rc-component","vendor-chunks/@babel","vendor-chunks/rc-select","vendor-chunks/rc-util","vendor-chunks/rc-menu","vendor-chunks/rc-tabs","vendor-chunks/rc-virtual-list","vendor-chunks/rc-field-form","vendor-chunks/rc-motion","vendor-chunks/rc-overflow","vendor-chunks/rc-notification","vendor-chunks/rc-pagination","vendor-chunks/rc-resize-observer","vendor-chunks/rc-rate","vendor-chunks/rc-input","vendor-chunks/rc-dropdown","vendor-chunks/rc-collapse","vendor-chunks/rc-tooltip","vendor-chunks/rc-textarea","vendor-chunks/@emotion","vendor-chunks/react-is","vendor-chunks/rc-picker","vendor-chunks/throttle-debounce","vendor-chunks/stylis","vendor-chunks/classnames","vendor-chunks/resize-observer-polyfill"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/antd","vendor-chunks/@ant-design","vendor-chunks/@rc-component","vendor-chunks/@babel","vendor-chunks/rc-select","vendor-chunks/rc-util","vendor-chunks/rc-menu","vendor-chunks/rc-tabs","vendor-chunks/rc-virtual-list","vendor-chunks/rc-field-form","vendor-chunks/rc-motion","vendor-chunks/rc-overflow","vendor-chunks/rc-notification","vendor-chunks/@swc","vendor-chunks/rc-pagination","vendor-chunks/rc-resize-observer","vendor-chunks/rc-rate","vendor-chunks/rc-input","vendor-chunks/rc-dropdown","vendor-chunks/rc-collapse","vendor-chunks/rc-tooltip","vendor-chunks/rc-textarea","vendor-chunks/@emotion","vendor-chunks/react-is","vendor-chunks/rc-picker","vendor-chunks/throttle-debounce","vendor-chunks/stylis","vendor-chunks/classnames","vendor-chunks/resize-observer-polyfill"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5CM1stendo%5COneDrive%5C%EB%AC%B8%EC%84%9C%5CMoviess-search&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
