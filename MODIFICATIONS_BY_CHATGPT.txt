@@ -1,8 +1,0 @@
-
-Additional automated changes applied:
-- Fixed pages/api/rate.js (corrected movie_id usage)
-- Added pages/api/search.js for server-side pagination and search
-- Added app/GuestInitializer.jsx to init guest_session and store guest_session_id in localStorage
-- Modified app/layout.js to include GuestInitializer and GenresProvider
-- Replaced app/page.js with a full client implementation using Ant Design, lodash.debounce, date-fns, server-side search, offline handling, Alert, Spin, and Rated tab logic
-- Updated components/MovieList.js to integrate rating and vote color badges
