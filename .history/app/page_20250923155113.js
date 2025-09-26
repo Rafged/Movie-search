@@ -80,9 +80,7 @@ export default async function Page({ searchParams }) {
 }
 
 function RatedTab() {
-  // This component fetches rated movies for the guest session on client side.
-  // It expects the guest session to be created through the proxy /api/guest
-  'use client'
+  'use client';
   import React, { useEffect, useState } from 'react';
   const [movies, setMovies] = useState(null);
   const [loading, setLoading] = useState(true);
