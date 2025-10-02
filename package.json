@@ -31,7 +31,7 @@
     "prettier": "^2.8.8",
     "typescript": "5.9.2"
   },
-   "lint-staged": {
+  "lint-staged": {
     "*.js": "eslint --fix",
     "*.ts": "eslint --fix",
     "*.tsx": "eslint --fix"
