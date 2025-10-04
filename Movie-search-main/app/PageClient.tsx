@@ -8,7 +8,7 @@ import { truncate } from '../utils/truncate';
 import { getVoteColor } from '../utils/voteColor';
 
 const { Search } = Input;
-const { TabPane } = Tabs;
+const items = [{ key: 'search', label: 'Search' }, { key: 'rated', label: 'Rated' }];
 
 export default function Page({genresMap}) {
   const [q, setQ] = useState('');
@@ -128,7 +128,7 @@ function renderMovieCard(m) {
       {error && <Alert message={error} type="error" showIcon style={{ marginBottom:12 }} />}
 
 <Tabs defaultActiveKey="1">
-        <Tabs.TabPane tab="Search" key="1">
+        <!-- TabPane removed --> tab="Search" key="1">
           
               <Search placeholder="Search movies" value={q} onChange={onSearchChange} enterButton style={{ marginBottom:12 }} />
 {loading ? <div style={{textAlign:'center', padding:40}}><Spin size="large" /></div> : (
@@ -141,12 +141,12 @@ function renderMovieCard(m) {
               </div>
             </>
           )}
-        </Tabs.TabPane>
-        <Tabs.TabPane tab="Rated" key="2">
+        <!-- /TabPane -->
+        <!-- TabPane removed --> tab="Rated" key="2">
           <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))', gap:12 }}>
             {Object.values(ratedMovies).map(renderMovieCard)}
           </div>
-        </Tabs.TabPane>
+        <!-- /TabPane -->
       </Tabs>
     </div>
   );
