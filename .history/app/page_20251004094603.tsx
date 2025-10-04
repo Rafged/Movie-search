@@ -1,9 +1,9 @@
 async function fetchMovies(page: number = 1) {
-  const url = `https://api.themoviedb.org/3/discover/movie?page=${page}`;
+  const base = `https://api.themoviedb.org/3/discover/movie?page=${page}`;
 
-  const res = await fetch(url, {
+  const res = await fetch(base, {
     headers: {
-      Authorization: `Bearer ${process.env.TMDB_ACCESS_TOKEN}`, // v4 токен из .env.local
+      Authorization: `Bearer ${process.env.TMDB_ACCESS_TOKEN as string}`, 
       'Content-Type': 'application/json;charset=utf-8',
     },
     cache: 'no-store',
@@ -20,8 +20,8 @@ export default async function Page() {
   const data = await fetchMovies(1);
 
   return (
-    <main style={{ padding: "20px" }}>
-      <h1>🎬 Movie List</h1>
+    <main>
+      <h1>Movie List</h1>
       <ul>
         {data.results.map((movie: any) => (
           <li key={movie.id}>{movie.title}</li>
