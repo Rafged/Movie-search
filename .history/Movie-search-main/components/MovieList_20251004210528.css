@@ -1,6 +1,6 @@
 .movies-grid {
 display: grid;
-grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 gap: 20px;
 }
 
@@ -12,8 +12,7 @@ background: #fff;
 border-radius: 12px;
 box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 overflow: hidden;
-height: 730px;
-
+height: 720px;
 }
 
 
