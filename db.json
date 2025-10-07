@@ -1,3 +1,28 @@
 {
-  "ratings": []
+  "ratings": [
+    {
+      "id": "617126",
+      "title": "The Fantastic 4: First Steps",
+      "poster": "/cm8TNGBGG0aBfWj0LgrESHv8tir.jpg",
+      "rating": 4.5
+    },
+    {
+      "id": 1267319,
+      "title": "Mantis",
+      "poster": "/xS9bbciDC5lHPgl79SrPyzxKAXL.jpg",
+      "rating": 4.5
+    },
+    {
+      "id": 803796,
+      "title": "KPop Demon Hunters",
+      "poster": "/22AouvwlhlXbe3nrFcjzL24bvWH.jpg",
+      "rating": 5
+    },
+    {
+      "id": 1061474,
+      "title": "Superman",
+      "poster": "/wPLysNDLffQLOVebZQCbXJEv6E6.jpg",
+      "rating": 4.5
+    }
+  ]
 }

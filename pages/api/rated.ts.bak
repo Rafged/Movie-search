@@ -2,11 +2,9 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
-    // Forward guest_session_id if provided (not used by json-server but kept for compatibility)
     const response = await fetch('http://localhost:3001/ratings');
     const data = await response.json();
-    // Return in shape { results: [...] } so frontend that expects data.results works.
-    res.status(200).json({ results: data });
+    res.status(200).json(data);
   } catch (err) {
     res.status(500).json({ message: 'Server error', error: String(err) });
   }
