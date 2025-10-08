@@ -119,40 +119,22 @@ export default function Page() {
     }
   }
 
-  async function handleRate(movieId: number, value: number) {
-  try {
-    const guest = localStorage.getItem('tmdb_guest_session_id');
-    if (!guest) {
-      alert('Guest session not initialized');
-      return;
+  async function handleRate(movieId:number, value:number) {
+    try {
+      const guest = localStorage.getItem('tmdb_guest_session_id');
+      if (!guest) { alert('Guest session not initialized'); return; }
+      const res = await fetch('/api/rate', {
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: JSON.stringify({ movie_id: movieId, value, guest_session_id: guest })
+      });
+      if (!res.ok) throw new Error('failed to rate');
+      setRatings(prev=>({ ...prev, [movieId]: value }));
+    } catch (e:any) {
+      console.error(e);
+      alert('Failed to send rating to server');
     }
-
-    const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
-    if (!apiKey) {
-      alert('TMDB API key not found (NEXT_PUBLIC_TMDB_API_KEY)');
-      return;
-    }
-
-    const url = `https://api.themoviedb.org/3/movie/${movieId}/rating?api_key=${apiKey}&guest_session_id=${guest}`;
-    const res = await fetch(url, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json;charset=utf-8' },
-      body: JSON.stringify({ value }),
-    });
-
-    if (!res.ok) {
-      const text = await res.text();
-      console.error('TMDB rating error:', res.status, text);
-      throw new Error(`Rating failed (${res.status})`);
-    }
-
-    setRatings((prev) => ({ ...prev, [movieId]: value }));
-    localStorage.setItem('movie_ratings_v1', JSON.stringify({ ...ratings, [movieId]: value }));
-  } catch (e: any) {
-    console.error(e);
-    alert('Failed to send rating to TMDB');
   }
-}
 
   const items = [
     { key: 'search', label: 'Search' },
