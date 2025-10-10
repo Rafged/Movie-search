@@ -7,19 +7,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const { id, title, poster, rating } = req.body;
-    const response = await fetch(`http://localhost:3001/ratings/${id}`);
+    const response = await fetch(`/api/rated/${id}`);
     const existing = response.ok ? await response.json() : null;
 
     if (existing && existing.id) {
       // Обновляем рейтинг
-      await fetch(`http://localhost:3001/ratings/${id}`, {
+      await fetch(`/api/rated/${id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, title, poster, rating })
       });
     } else {
       // Добавляем новый фильм
-      await fetch(`http://localhost:3001/ratings`, {
+      await fetch(`/api/rated`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, title, poster, rating })

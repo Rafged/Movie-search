@@ -25,7 +25,7 @@ export default function Page() {
     setLoading(false);
   };
 
-  const debouncedSearch = useCallback(debounce((val:string)=>{ setPage(1); /*call search*/ }, 400), []);
+  const debouncedSearch = useCallback(debounce((val:string)=>{ setPage(1); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); /*call search*/ }, 400), []);
 
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
@@ -156,7 +156,7 @@ export default function Page() {
                 enterButton="Search"
                 value={query}
                 onChange={e=>setQuery(e.target.value)}
-                onSearch={(v)=>{ setPage(1); fetchMovies(v,1); }}
+                onSearch={(v)=>{ setPage(1); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); fetchMovies(v,1); }}
               />
             </div>
           )}
@@ -174,7 +174,7 @@ export default function Page() {
 
         <div style={{ textAlign:'center', marginTop:16 }}>
           {tab === 'search' && totalPages > 0 && (
-            <Pagination current={page} total={totalPages*10} onChange={(p)=>{ setPage(p); fetchMovies(query,p); }} />
+            <Pagination current={page} total={totalPages*10} onChange={(p)=>{ setPage(p); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); fetchMovies(query,p); }} />
           )}
         </div>
       </div>

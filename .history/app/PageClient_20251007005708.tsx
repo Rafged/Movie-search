@@ -49,7 +49,7 @@ export default function Page({genresMap}) {
   }, []);
 
   // debounce user typing
-  const debounced = useCallback(debounce((val)=>{ setPage(1); doSearch(val,1); }, 350), [doSearch]);
+  const debounced = useCallback(debounce((val)=>{ setPage(1); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); doSearch(val,1); }, 350), [doSearch]);
 
   function onSearchChange(e) {
     setQ(e.target.value);
@@ -137,7 +137,7 @@ function renderMovieCard(m) {
                 {movies.map(renderMovieCard)}
               </div>
               <div style={{ textAlign:'center', marginTop:12 }}>
-                <Pagination current={page} total={totalPages*10} pageSize={10} onChange={(p)=>{ setPage(p); doSearch(q,p); }} />
+                <Pagination current={page} total={totalPages*10} pageSize={10} onChange={(p)=>{ setPage(p); if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" }); doSearch(q,p); }} />
               </div>
             </>
           )}
