@@ -11,7 +11,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   try {
     const body = req.body || {};
-
+    
     let id = body.id || body.movie_id;
     let rating = body.rating || body.value;
     let title = body.title;
@@ -49,6 +49,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(200).json({ success: true, source: 'tmdb', data });
     }
 
+    // Fallback: store locally in data/ratings.json (for manual entries or when TMDB key missing)
     const payload = { id, title, poster, rating, created_at: new Date().toISOString() };
     let existing = [];
     try {
@@ -56,7 +57,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     } catch {
       existing = [];
     }
-   
+    // if id present try update, else push new with generated id
     if (id) {
       const idx = existing.findIndex((r: any) => String(r.id) === String(id));
       if (idx >= 0) {
