@@ -13,6 +13,7 @@ const items = [{ key: 'search', label: 'Search' }, { key: 'rated', label: 'Rated
 export default function Page({genresMap}) {
   const [q, setQ] = useState('');
   const [page, setPage] = useState(1);
+  const [activeKey, setActiveKey] = useState('1');
   const [loading, setLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const [totalPages, setTotalPages] = useState(1);
@@ -127,10 +128,10 @@ function renderMovieCard(m) {
       {offline && <Alert message="You are offline" type="warning" showIcon style={{ marginBottom:12 }} />}
       {error && <Alert message={error} type="error" showIcon style={{ marginBottom:12 }} />}
 
-<Tabs defaultActiveKey="1">
+<Tabs activeKey={activeKey} onChange={(key)=>setActiveKey(key)} defaultActiveKey="1">
         <!-- TabPane removed --> tab="Search" key="1">
           
-              <Search placeholder="Search movies" value={q} onChange={onSearchChange} enterButton style={{ marginBottom:12 }} />
+              {activeKey === "1" && (<Search placeholder="Search movies" value={q} onChange={onSearchChange} enterButton style={{ marginBottom:12 }} />)}
 {loading ? <div style={{textAlign:'center', padding:40}}><Spin size="large" /></div> : (
             <>
               <div style={{ display:'grid', gridTemplateColumns:'repeat(auto-fill,minmax(220px,1fr))', gap:12 }}>

@@ -145,13 +145,13 @@ export default function Page() {
       <GuestInitializer />
       <Tabs activeKey={tab} onChange={(k)=>setTab(k as any)} items={items} />
       <div style={{ marginTop: 12 }}>
-        <Search
+        {tab === 'search' && (<Search
           placeholder="Search movies..."
           enterButton
           value={query}
           onChange={onInputChange}
           onSearch={onSearchEnter}
-        />
+        />)}
       </div>
 
       <div style={{ marginTop: 16 }}>
